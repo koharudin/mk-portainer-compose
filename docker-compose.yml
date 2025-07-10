@@ -10,7 +10,4 @@ services:
       - "2018:9443"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-
-volumes:
-  portainer_data:
+      - ./dev-docker-volumes/portainer_data:/data
